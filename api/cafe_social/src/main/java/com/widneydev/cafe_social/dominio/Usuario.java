@@ -18,6 +18,8 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
+    private String nome; // nome formal do usuario
+    
     private String username; // necessário lógica para evitar usernames duplicados
     
     private String email; // necessário lógica para validação de email do usuario
