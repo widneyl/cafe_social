@@ -5,4 +5,5 @@
 
 14/05 - SOFIA
     commits:
-        "" -
+        "repositorio e ajustes" - renomeei algumas classes para melhor organização e trouxe a interface repositorio;
+        "metodos crud basicos" - criei os metodos basicos de crud, por enquanto as exceções não estão customizadas;

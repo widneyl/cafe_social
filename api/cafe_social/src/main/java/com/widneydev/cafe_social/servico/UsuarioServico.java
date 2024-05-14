@@ -15,14 +15,34 @@ import com.widneydev.cafe_social.modelo.Usuario;
 public class UsuarioServico {
     private final UsuarioRepositorio usuarioRepositorio;
 
-    // listando os usuarios do banco de dados (lista por enquanto)
     public List<Usuario> listAll(){
         return usuarioRepositorio.findAll();
     }
 
     // procurando usuario por id e exibindo se existir
     public Usuario findById(long id){
-        return usuarioRepositorio.findById(id).orElseThrow();
+        return usuarioRepositorio.findById(id).orElse(null);
+    }
+
+    public List<Usuario> findByNome(String name) {
+        return usuarioRepositorio.findByNome(name);
+    }
+
+    public List<Usuario> findByIdade(int idade){
+        return usuarioRepositorio.findByIdade(idade);
+    }
+
+    public Usuario save(Usuario usuario){
+        return usuarioRepositorio.save(usuario);
+    }
+
+    public void delete(Long id){
+        usuarioRepositorio.delete(findById(id));
+    }
+
+    // metodo update vai precisar de ajustes
+    public void update(Usuario usuario){
+        usuarioRepositorio.save(usuario);
     }
 
 }

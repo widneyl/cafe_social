@@ -5,6 +5,9 @@ package com.widneydev.cafe_social.repositorio;
 import com.widneydev.cafe_social.modelo.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UsuarioRepositorio extends JpaRepository<Usuario, Long> {
+import java.util.List;
 
+public interface UsuarioRepositorio extends JpaRepository<Usuario, Long> {
+    List<Usuario> findByNome(String name);
+    List<Usuario> findByIdade(int idade);
 }
