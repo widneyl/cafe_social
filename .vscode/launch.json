@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CafeSocialApplication<cafe_social>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.widneydev.cafe_social.CafeSocialApplication",
+            "projectName": "cafe_social",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
