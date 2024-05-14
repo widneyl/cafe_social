@@ -7,3 +7,4 @@
     commits:
         "repositorio e ajustes" - renomeei algumas classes para melhor organização e trouxe a interface repositorio;
         "metodos crud basicos" - criei os metodos basicos de crud, por enquanto as exceções não estão customizadas;
+        "usuario post dto e mapstruct" - criei o data transfer object do usuario, para qnd acontecer o cadastro não ser permitido o usuario inserir seu id, e sim ser criado automaticamente, tambem inseri o framework mapstruct p/ conversão de UsuarioPostDTO para entidade Usuario;

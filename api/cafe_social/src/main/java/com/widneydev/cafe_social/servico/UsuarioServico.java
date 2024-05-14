@@ -2,6 +2,8 @@ package com.widneydev.cafe_social.servico;
 
 import java.util.List;
 
+import com.widneydev.cafe_social.dto.UsuarioMapper;
+import com.widneydev.cafe_social.dto.UsuarioPostDTO;
 import com.widneydev.cafe_social.repositorio.UsuarioRepositorio;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -32,7 +34,8 @@ public class UsuarioServico {
         return usuarioRepositorio.findByIdade(idade);
     }
 
-    public Usuario save(Usuario usuario){
+    public Usuario save(UsuarioPostDTO usuarioPostDTO){
+        Usuario usuario = UsuarioMapper.INSTANCE.toUsuario(usuarioPostDTO);
         return usuarioRepositorio.save(usuario);
     }
 
