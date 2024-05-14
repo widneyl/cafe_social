@@ -3,7 +3,7 @@ package com.widneydev.cafe_social.controle;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.widneydev.cafe_social.dominio.Usuario;
+import com.widneydev.cafe_social.modelo.Usuario;
 import com.widneydev.cafe_social.servico.UsuarioServico;
 
 import lombok.RequiredArgsConstructor;
@@ -19,12 +19,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 @RestController
 @RequestMapping("usuarios")
 @RequiredArgsConstructor
-public class Controle {
+public class UsuarioControle {
 
     private final UsuarioServico usuarioService;
 
     // primeiro endpoint que irá listar os usuarios
-    @GetMapping(path = "list")
+    @GetMapping(path = "/list")
     public ResponseEntity<List<Usuario>> list() {
         return ResponseEntity.ok(usuarioService.listAll());
     }

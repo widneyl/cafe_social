@@ -1,4 +1,8 @@
 10/05 - SOFIA
     commits:
         "adc. dominio usuario" - criei o dominio usuario com alguns atributos iniciais apenas para teste e ter uma ideia do que vai ser tratado na api;
-        "controle, servico e doc. atuaizacoes" - implementei o list e o findById no controle para começar a testar as requisições http, tambem criei o servico com uma lista temporaria para testar o list e find; criei esse txt pra explicar melhor os commits que a gente for fazendo; testei as requisições e ta funcionando 
+        "controle, servico e doc. atuaizacoes" - implementei o list e o findById no controle para começar a testar as requisições http, tambem criei o servico com uma lista temporaria para testar o list e find; criei esse txt pra explicar melhor os commits que a gente for fazendo; testei as requisições e ta funcionando
+
+14/05 - SOFIA
+    commits:
+        "" -
