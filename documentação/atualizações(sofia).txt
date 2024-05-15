@@ -1,0 +1,13 @@
+10/05 - SOFIA
+    commits:
+        "controle, servico e doc. atuaizacoes" - implementei o list e o findById no controle para começar a testar as requisições http, tambem criei o servico com uma lista temporaria para testar o list e find; criei esse txt pra explicar melhor os commits que a gente for fazendo; testei as requisições e ta funcionando
+
+14/05 - SOFIA
+    commits:
+        "repositorio e ajustes" - renomeei algumas classes para melhor organização e trouxe a interface repositorio;
+        "metodos crud basicos" - criei os metodos basicos de crud, por enquanto as exceções não estão customizadas;
+        "usuario post dto e mapstruct" - criei o data transfer object do usuario, para qnd acontecer o cadastro não ser permitido o usuario inserir seu id, e sim ser criado automaticamente, tambem inseri o framework mapstruct p/ conversão de UsuarioPostDTO para entidade Usuario;
+
+        "adc. dominio usuario" - criei o dominio usuario com alguns atributos iniciais apenas para teste e ter uma ideia do que vai ser tratado na api;
+        "controle, servico e doc. atuaizacoes" - implementei o list e o findById no controle para começar a testar as requisições http, tambem criei o servico com uma lista temporaria para testar o list e find; criei esse txt pra explicar melhor os commits que a gente for fazendo; testei as requisições e ta funcionando
+        "handler e expcetions para customização de badrequests" - customizei as exceções do findById, por enquanto ainda ta bem simples

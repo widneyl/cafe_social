@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.widneydev.cafe_social.dto.UsuarioMapper;
 import com.widneydev.cafe_social.dto.UsuarioPostDTO;
+import com.widneydev.cafe_social.exceptions.BadRequestException;
 import com.widneydev.cafe_social.repositorio.UsuarioRepositorio;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -23,7 +24,9 @@ public class UsuarioServico {
 
     // procurando usuario por id e exibindo se existir
     public Usuario findById(long id){
-        return usuarioRepositorio.findById(id).orElse(null);
+        return usuarioRepositorio.findById(id).orElseThrow(
+                () -> new BadRequestException("Usuário não encontrado ou não existe.")
+        );
     }
 
     public List<Usuario> findByNome(String name) {
