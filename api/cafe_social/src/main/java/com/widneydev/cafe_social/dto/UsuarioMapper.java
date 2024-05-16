@@ -13,6 +13,7 @@ public abstract class UsuarioMapper {
     public abstract Usuario toUsuario(UsuarioPostDTO usuarioPostDTO);
 
     // futuramente necessário fazer do usuarioPutDTO .....
+    public abstract Usuario toUsuario(UsuarioPutDTO usuarioPutDTO);
 
 
 }

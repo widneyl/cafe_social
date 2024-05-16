@@ -1,6 +1,8 @@
 package com.widneydev.cafe_social.controle;
 
 import com.widneydev.cafe_social.dto.UsuarioPostDTO;
+import com.widneydev.cafe_social.dto.UsuarioPutDTO;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,7 +49,7 @@ public class UsuarioControle {
 
 
     @PostMapping(path = "/cadastrar")
-    public ResponseEntity<Usuario> save(@RequestBody UsuarioPostDTO usuarioPostDTO){
+    public ResponseEntity<Usuario> save(@RequestBody @Valid UsuarioPostDTO usuarioPostDTO){
         return new ResponseEntity<>(usuarioService.save(usuarioPostDTO), HttpStatus.CREATED);
     }
 
@@ -58,8 +60,8 @@ public class UsuarioControle {
     }
 
     @PutMapping(path = "/atualizar")
-    public ResponseEntity<Void> update(@RequestBody Usuario usuario){
-        usuarioService.update(usuario);
+    public ResponseEntity<Void> update(@RequestBody @Valid UsuarioPutDTO usuarioPutDTO){
+        usuarioService.update(usuarioPutDTO);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
