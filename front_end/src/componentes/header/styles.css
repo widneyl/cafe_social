@@ -1,0 +1,29 @@
+* {margin: 0;padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: black;}
+
+.cabecalho{
+    background-color: rgb(205, 204, 204);
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+
+    padding: 20px;
+    display: flex;
+    /*justify-content: center; Alinhamento horizontal*/
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cabecalho img {
+    height: 100px;
+}
+
+.cabecalho nav {
+    display: flex;
+    color: white;
+}
+
+.cabecalho li {
+    margin: 0px 15px;
+}

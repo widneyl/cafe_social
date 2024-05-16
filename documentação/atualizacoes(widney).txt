@@ -1,0 +1,9 @@
+14/05 - WIDNEY
+    commits:
+        "Inicialização do React no projeto e exclusão da pasta de modulos antiga"
+15/05 - WIDNEY
+    commits:
+        "Instalação do react-router-dom para iniciar a navegação entre paginas"
+16/05 - WIDNEY
+    commits:
+        "adc. das primeiras rotas de paginas"
