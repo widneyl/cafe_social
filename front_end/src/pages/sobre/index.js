@@ -1,13 +1,13 @@
 import './styles.css'
 import Header from '../../componentes/header';
-function Principal() {
+
+function Sobre() {
     return (
         <>
             <Header/>
-            <h1>Pagina de principal</h1>
+            <h1>Pagina de sobre</h1>
         </>
- 
     );
 }
 
-export default Principal;
+export default Sobre;
