@@ -1,13 +1,14 @@
 * {margin: 0;padding: 0; font-family: 'Courier New', Courier, monospace;}
 li {list-style: none;}
-a {text-decoration: none; color: black;}
+a {text-decoration: none; color: rgb(255, 255, 255);}
 
 .cabecalho{
-    background-color: rgb(205, 204, 204);
+    /*background-color: rgb(205, 204, 204);*/
     font-size: 24px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 
-    padding: 20px;
+    padding: 20px 100px;
+    
     display: flex;
     /*justify-content: center; Alinhamento horizontal*/
     justify-content: space-between;
@@ -25,5 +26,5 @@ a {text-decoration: none; color: black;}
 }
 
 .cabecalho li {
-    margin: 0px 15px;
+    margin: 0px 30px;
 }
