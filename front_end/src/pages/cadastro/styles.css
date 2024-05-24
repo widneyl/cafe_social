@@ -36,3 +36,7 @@
     border-bottom: 1px solid black;
     outline: none;
 }
+.formulario button{
+    height: 35px;
+    width: 100px;
+}
