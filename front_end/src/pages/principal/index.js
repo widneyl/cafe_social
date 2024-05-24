@@ -4,7 +4,7 @@ function Principal() {
     return (
         <>
             <Header/>
-            <h1>Pagina principal</h1>
+           
         </>
  
     );

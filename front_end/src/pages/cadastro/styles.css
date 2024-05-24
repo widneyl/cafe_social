@@ -1,13 +1,13 @@
 .bloco-cadastro{
     font-family:'Courier New', Courier, monospace;
 
-    height: 40vh;
+    height: 50vh;
     width: 60vh;
-    background-color: white;
+    background-color: #3D3B39;
 
     border: 1px solid rgb(0, 0, 0);
     border-radius: 8px;
-    
+
     margin: auto;
     margin-top: 20px;
 
@@ -17,7 +17,7 @@
 }
 
 .formulario{
-    color: black;
+    color: rgb(253, 253, 253);
     display: flex;
     align-items: center;
 
@@ -28,15 +28,27 @@
     padding: 20px;
 }
 .formulario input{
+    background-color: transparent;
     font-size: 16px;
     width: 400px;
     height: 25px;
     margin-top: 20px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     outline: none;
 }
 .formulario button{
     height: 35px;
     width: 100px;
+    background-color: #e75849;
+    color: white;
+    border: none;
+    border-radius: 4px;
+
+}
+.formulario button:hover{
+    transition: 0.2s;
+    background-color: white;
+    color: black;
 }

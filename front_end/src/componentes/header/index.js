@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import './styles.css'
-import logo from '../../img/caneca-de-cafe.png'
+import logo from '../../img/xicara-de-cafe.png'
 function Header() {
     return (
         <header className='cabecalho'>
