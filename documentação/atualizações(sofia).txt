@@ -16,3 +16,7 @@
         "handler e expcetions para customização de badrequests" - customizei as exceções do findById, por enquanto ainda ta bem simples
         "validação de campos do Usuario" - inseri anotações de validação nos atributos do usuário, nao permitindo nulos, vazios ou inválidos (poderá passar por ajustes)
         "metodo update ajustado com validações e exceções" - fiz uma nova forma de fazer update (nao sei se vai ser util futuramente); tem validações e exceções customizadas
+
+24/05 - SOFIA
+    commits:
+        "crossorigin e correção de validação" - adicionei o crossorigin no controle e fiz um teste rápido com um form de cadastro que já tinha pronto; teve um erro de validação com a idade por causa da anotação @NotEmpty do jakarta.validation, pesquisei e a anotação @NotEmpty é destinada apenas a Strings, Collections, Maps e arrays para certificar que não estão vazios, não se aplica a atributos int

@@ -19,6 +19,7 @@ import org.springframework.http.ResponseEntity;
 @RestController
 @RequestMapping("usuarios")
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioControle {
 
     private final UsuarioServico usuarioService;
