@@ -20,7 +20,7 @@ public class UsuarioPostDTO {
     @NotEmpty(message = "Senha não pode ser vazia")
     @NotNull(message = "Senha não pode ser nula")
     private String senha;
-    @NotEmpty(message = "Idade não pode ser vazio")
+    // @NotEmpty(message = "Idade não pode ser vazio")
     @NotNull(message = "Idade não pode ser nula")
     private int idade;
 
