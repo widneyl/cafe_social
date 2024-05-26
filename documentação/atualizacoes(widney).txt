@@ -7,3 +7,10 @@
 16/05 - WIDNEY
     commits:
         "adc. das primeiras rotas de paginas"
+23/05 - WIDNEY
+    commits:
+        "Criação da pagina de login de usuario para testes com a api"
+        "adc. das funcionalidades do formulario com useState"
+26/05 - WIDNEY
+    commits:
+        "Instalação do axios"
