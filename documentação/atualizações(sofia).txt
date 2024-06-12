@@ -20,3 +20,9 @@
 24/05 - SOFIA
     commits:
         "crossorigin e correção de validação" - adicionei o crossorigin no controle e fiz um teste rápido com um form de cadastro que já tinha pronto; teve um erro de validação com a idade por causa da anotação @NotEmpty do jakarta.validation, pesquisei e a anotação @NotEmpty é destinada apenas a Strings, Collections, Maps e arrays para certificar que não estão vazios, não se aplica a atributos int
+
+
+-> TRATAMENTO DE ERROS RECORRENTES
+
+- erro na compilação do UsuarioMapper:
+    geralmente acontece depois que executo ou edito o projeto no vs code e volto para o intellij, para resolver apago a os arquivos de generated_sources no target, referentes a classe UsuarioMapper
