@@ -1,0 +1,25 @@
+* {margin: 0;padding: 0; font-family: 'Courier New', Courier, monospace;}
+li {list-style: none;}
+a {text-decoration: none; color: rgb(255, 255, 255);}
+
+.container-primary{
+    display: flex;
+    margin-top: 5px;
+    background-color: rgb(17 17 17);
+    justify-content: space-between;
+    font-size: 20px;
+}
+#box{
+    width: 305px;
+}
+.settings{
+    background-color: rgb(255, 0, 0);
+    
+}
+.timeline{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.notification{
+    background-color: rgb(0, 255, 0);
+}

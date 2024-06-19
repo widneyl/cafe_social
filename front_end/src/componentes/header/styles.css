@@ -3,7 +3,7 @@ li {list-style: none;}
 a {text-decoration: none; color: rgb(255, 255, 255);}
 
 .cabecalho{
-    /*background-color: rgb(205, 204, 204);*/
+    background-color: rgb(17, 17, 17);
     font-size: 24px;
     color: rgb(255, 255, 255);
 
